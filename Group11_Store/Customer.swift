@@ -18,10 +18,17 @@ class Customer {
     }
 
     func reloadAccount(amount : Double) {
-        
+        balance += amount
     }
 
     func userItem(id : Int, minutes : Int){
-        
+        for item in itemList {
+            print(item.title)
+            if item.id == id {
+                print("Add minute")
+                let ownedItem = OwnedItem(id: item.id, title: item.title, price: item.price, minutesUsed: minutes)
+                break
+            }
+        }
     }
 }

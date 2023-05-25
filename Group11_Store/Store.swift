@@ -25,7 +25,7 @@ class Store {
         //after owned item class is implemented
     }
     func findByTitle(keyword: String) {
-        
+        print("keyword = \(keyword)")
         // yet to implement after your implementation
         
     }
