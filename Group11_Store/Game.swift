@@ -7,26 +7,13 @@
 
 import Foundation
 
-class Flight {
+class Game {
     
     var publisher: String = ""
-    var isMultiplayer: String = ""
-    var cost: Double = 0.0
+    var isMultiplayer: Bool = false
     
-//    //initializer - initializes default values for class attributes
-//    init(flightNumber: String, distance: Double, departure: String, arrival: String) {
-//        self.flightNumber = flightNumber
-//        self.distance = distance
-//        self.departure = departure
-//        self.arrival = arrival
-//        self.cost = 1000 + (distance * 0.75)
-//    }
-//
-//    func getTripDetails() {
-//        print("Flight \(flightNumber), Departing \(departure), Arriving \(arrival). Distance: \(distance)")
-//    }
-//
-//    func getTypeTravel() -> String {
-//        return "F"
-//    }
+    init(publisher: String, isMultiplayer: Bool) {
+        self.publisher = publisher
+        self.isMultiplayer = isMultiplayer
+    }
 }
