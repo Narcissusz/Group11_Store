@@ -7,13 +7,18 @@
 
 import Foundation
 
-class Game {
+class Game : Item  {
     
     var publisher: String = ""
     var isMultiplayer: Bool = false
     
-    init(publisher: String, isMultiplayer: Bool) {
+    init(id : Int, title : String, price : Double, publisher: String, isMultiplayer: Bool) {
         self.publisher = publisher
         self.isMultiplayer = isMultiplayer
+        super.init(id: id, title: title, price: price)
+    }
+    
+    override func printReceipt(isRefund: Bool, amount: Double) {
+        //
     }
 }

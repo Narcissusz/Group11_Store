@@ -7,11 +7,12 @@
 
 import Foundation
 
-class OwnedItem {
+class OwnedItem : Item {
     
     var minutesUsed : Int = 0
     
-    init(minutesUsed: Int) {
+    init(id : Int, title : String, price : Double, minutesUsed: Int) {
         self.minutesUsed = minutesUsed
+        super.init(id: id, title: title, price: price)
     }
 }

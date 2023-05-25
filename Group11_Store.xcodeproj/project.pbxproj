@@ -73,12 +73,12 @@
 			children = (
 				2B7AB0222A1E9816003F2BC7 /* main.swift */,
 				2B7AB0292A1F1635003F2BC7 /* Game.swift */,
+				2B7AB0312A1F1C65003F2BC7 /* Movie.swift */,
+				2B7AB02D2A1F1954003F2BC7 /* Customer.swift */,
+				2B7AB02F2A1F1BBD003F2BC7 /* OwnedItem.swift */,
 				7178D6262A1EBE1A00976E85 /* IsPurchasable.swift */,
 				7178D6282A1EBF2700976E85 /* Item.swift */,
 				7178D62C2A1EC40600976E85 /* Store.swift */,
-				2B7AB02D2A1F1954003F2BC7 /* Customer.swift */,
-				2B7AB02F2A1F1BBD003F2BC7 /* OwnedItem.swift */,
-				2B7AB0312A1F1C65003F2BC7 /* Movie.swift */,
 			);
 			path = Group11_Store;
 			sourceTree = "<group>";

@@ -7,11 +7,16 @@
 
 import Foundation
 
-class Movie {
+class Movie : Item {
     
     var runningTime: Int = 0
     
-    init(runningTime: Int) {
+    init(id : Int, title : String, price : Double, runningTime: Int) {
         self.runningTime = runningTime
+        super.init(id: id, title: title, price: price)
+    }
+    
+    override func printReceipt(isRefund: Bool, amount: Double) {
+        //
     }
 }
