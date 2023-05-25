@@ -7,5 +7,11 @@
 
 import Foundation
 
-print("Hello, World!")
-
+//var store = Store(items: [])
+//
+//store.buyItem(customer:  , itemId: )
+//
+//store.issueRefund(customer: customer, itemId: 1)
+//store.issueRefund(customer: customer, itemId: 3)
+//
+//store.findByTitle(keyword: "kingdom")
