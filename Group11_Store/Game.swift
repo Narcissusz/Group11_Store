@@ -18,7 +18,10 @@ class Game : Item  {
         super.init(id: id, title: title, price: price)
     }
     
-    override func printReceipt(isRefund: Bool, amount: Double) {
-        //
+    //
+    override var info: String {
+        get{
+            return  "\(super.info) \nPublisher : \(self.publisher) \nIs Multiplier : \(self.isMultiplayer)"
+        }
     }
 }

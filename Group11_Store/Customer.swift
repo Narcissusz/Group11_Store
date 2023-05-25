@@ -9,24 +9,24 @@ import Foundation
 
 class Customer {
     
-    var itemList: [Item] = []
+    var itemList: [OwnedItem] = []
     var balance: Double = 0.0
     
-    init(itemList: [Item], balance: Double = 10.0) {
+    init(itemList: [OwnedItem], balance: Double = 10.0) {
         self.itemList = itemList
         self.balance = balance
     }
 
     func reloadAccount(amount : Double) {
+        print("Reloading Customer's balance with amount : $\(amount)")
         balance += amount
     }
 
-    func userItem(id : Int, minutes : Int){
+    func useItem(id : Int, minutes : Int){
         for item in itemList {
-            print(item.title)
             if item.id == id {
-                print("Add minute")
-                let ownedItem = OwnedItem(id: item.id, title: item.title, price: item.price, minutesUsed: minutes)
+                print("Adding \(minutes) minute for item : \(item.title)")
+                item.minutesUsed += minutes
                 break
             }
         }

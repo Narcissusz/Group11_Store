@@ -16,7 +16,10 @@ class Movie : Item {
         super.init(id: id, title: title, price: price)
     }
     
-    override func printReceipt(isRefund: Bool, amount: Double) {
-        //
+    //
+    override var info: String {
+        get{
+            return "\(super .info)\nLength : \(self.runningTime) min"
+        }
     }
 }

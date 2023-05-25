@@ -30,7 +30,7 @@ class Item: IsPurchasable {
         print("-------------------------")
         
         if isRefund {
-            print("We are refunding the purchase of \(title)")
+            print("🎉 We are refunding the purchase of \(title)")
             print("Refund amount: $\(amount)")
         }else{
             print("Thank you for purchasing \(title)")
